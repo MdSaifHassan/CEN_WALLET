@@ -4,19 +4,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import NavigationScreen from './src/navigation/Navigation';
 const Stack = createStackNavigator();
 import { Provider } from 'react-redux';
-import {store} from './redux/store';
+import {store} from './src/redux/store';
 
-const store = configureStore();
 
 function App() {
   return (
-    <Provider store={store}>
     <NavigationContainer>
       <Stack.Navigator>
+      <Provider store={store}>
         <Stack.Screen name="Home" component={NavigationScreen} />
+        </Provider>
       </Stack.Navigator>
     </NavigationContainer>
-    </Provider>
   );
 }
 

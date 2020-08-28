@@ -3,10 +3,10 @@ import { Button, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../home/index'
-import Login from '../login/Login1';
+import HomeScreen from '../components/home/index'
+import Login from '../components/login/Login1';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import LinkAccount from './src/components/link crad/LinkAccount';
+import LinkAccount from '../components/link crad/LinkAccount';
 import { AntDesign } from '@expo/vector-icons'; 
 
 
